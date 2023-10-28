@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-color: #070707;
+}
+.container-product {
+    width: 1150px;
+    margin: auto;
+    display: table;
+    clear: both;
+}
+.container-product h3 {
+    color: #FFFFFF;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+}
+.product-item {
+    width: 23%;
+    float: left;
+    margin: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.35);
+    border-radius: 25px;
+    background: #1d1d1d;
+    position: relative;
+}
+.product-img {
+    padding: 20px;
+    border-bottom: solid 0.5px rgba(255, 255, 255, 0.092);
+}
+.product-img img {
+    width: 100%;
+}
+.product-price>h4 {
+    margin: 10px 0;
+    padding: 0 20px;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+    height: 50px;
+}
+.product-price {
+    padding: 0 20px;
+}
+.product-button {
+    margin: 15px auto;
+    width: 80%;
+
+}
+.btn {
+    margin: 15px 0;
+    background: #844CD4;
+    border: 1px solid #844CD4;
+    border-radius: 23px;
+    width: 100%;
+    margin: auto;
+    padding: 10px 25px;
+    color: #FFFFFF;
+}
+.price-new {
+    clear: both;
+    display: table;
+    width: 100%;
+    padding: 10px 0;
+}
+.price-old {
+    clear: both;
+    display: table;
+    width: 100%;
+    color: #969BA2;
+    font-size: 14px;
+    padding-bottom: 10px;
+    position: relative;
+}
+.usd {
+    float: left;
+}
+.grn {
+    float: right;
+}
+.price-new .grn {
+    color: #FFFFFF;
+    font-size: 18px;
+}
+.price-new .usd {
+    color: #d2d2d2;
+    font-size: 12px;
+}
+.topsticker {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #c55959;
+    border-radius: 12px;
+    padding: 3px 13px;
+    font-size: 12px;
+    color: #FFFFFF;
+    margin: 5px 0;
+}
+.price-old::after{
+    content: "";
+    border-bottom: 1px solid #969BA2;
+    position: absolute;
+    width: 40px;
+    height: 50%;
+    bottom: 18px;
+    left: 0;
+}
+.price-old::before{
+    content: "";
+    border-bottom: 1px solid #969BA2;
+    position: absolute;
+    width: 60px;
+    height: 50%;
+    bottom: 18px;
+    right: 0;
+}
